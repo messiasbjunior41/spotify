@@ -1,0 +1,12 @@
+<h5>Compartilhando um serviço entre componentes</h5>
+
+<input type="text" #MusicaInput>
+<button (click)="onAddMusica(musicaInput.value)">Add Musica</button>
+
+<ul>
+  <li *ngFor="let musica of musicas">
+    {{ musica }}
+  </li>
+</ul>
+
+<app-receber-musica-criado></app-receber-musica-criado>
